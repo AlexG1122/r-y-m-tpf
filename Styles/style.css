@@ -1,0 +1,198 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  body {
+    background-image: url(https://i.pinimg.com/736x/b5/ae/d8/b5aed8680724b4e963704ac293bcf12d.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(111, 245, 73);
+}
+
+  /* Estilos header */
+  
+  header {
+    background-color: rgb(173, 209, 101);
+    background-image: url(https://4kwallpaper.wiki/wp-content/uploads/2019/07/75564.jpg);
+  padding: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*filter:brightness(50%)*/
+    
+    }
+  
+  header img {
+    /*background-image: url(https://www.hdwallpapers.in/download/rick_sanchez_morty_smith_in_starry_sky_background_hd_rick_and_morty-HD.jpg);*/
+    width: 900px;
+    border-radius:10p;
+    /*opacity: 0.2; */
+    
+  }
+
+  .second-pic img {
+    width: 500px;
+    padding: 10px
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  header li {
+    background-color: teal;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Estilos main */
+  
+  main {
+    background-color: rgb(237, 221, 164);
+    background-image: url(https://i.pinimg.com/originals/84/58/b0/8458b028ec0a43cf2211524604cac23b.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+  }
+  
+  .sinopsis {
+    background-color: rgb(127, 225, 174);
+    background-image: url("https://cdn.wallpapersafari.com/85/76/Z3l6uQ.jpg");
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 10px;
+    color: rgb(238, 185, 38)
+  }
+  
+  .sinopsis img {
+    width: 300px;
+    padding: 10px
+  }
+  
+  .sinopsis h2 {
+    padding-bottom: 20px;
+  }
+  
+  .sinopsis p {
+    padding-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .titulo-pesonajes {
+    text-align: center;
+    padding: 20px;
+    background-image: url("https://cdn.wallpapersafari.com/85/76/Z3l6uQ.jpg");
+    /*  eje Y | eje x  */
+    margin-top: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Estilos contenedor dinámico | Personajes */
+  
+  .cont-personajes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .cont-personaje {
+    /*background-color: cornflowerblue;*/
+    background: linear-gradient(180deg, rgb(245, 89, 245), rgb(64, 201, 201), rgb(8, 14, 65));
+    padding: 20px;
+    margin: 30px;
+    border: solid rgb(73, 9, 209) 3px;
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    background-image: url("https://grizly.club/uploads/posts/2023-01/1673380744_grizly-club-p-besshovnaya-tekstura-sero-bezhevogo-mramor-1.jpg");
+    color: rgb(202, 101, 14);
+    font-style: oblique;
+    font-size: larger;
+    font: bold ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+ .cont-personaje:hover {
+    transform: scale(1.10)
+  }
+
+
+  .cont-personaje img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .cont-personaje h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(250, 247, 107);
+  }
+  
+  /* Estilos sección streaming */
+  
+  .ver-serie {
+    background-color: rgb(208, 162, 208);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color:blanchedalmond
+  }
+  
+  .ver-serie img {
+    width: 200px;
+  }
+  
+  /* Estilos footer */
+  
+  footer {
+    background-color: steelblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  footer li {
+    background-color: wheat;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  /* Responsive desing | Mobile */
+  
+  @media (max-width: 480px) {
+    header, .sinopsis, .streaming, footer {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
